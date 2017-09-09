@@ -6,7 +6,7 @@ services:
     container_name: users-db
     build: https://github.com/jasondewitt/flask-microservices-users.git#master:/project/db
     ports:
-      - 5432:5432   # HOST:CONTAINER
+      - 5435:5432   # HOST:CONTAINER
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
